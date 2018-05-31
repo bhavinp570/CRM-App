@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Invoice</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="../files/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="files/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- feather icon -->
+    <link rel="stylesheet" type="text/css" href="files/assets/icon/feather/css/feather.css">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="files/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <!-- ico font -->  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="files/assets/css/font-awesome.min.css">
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="files/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="files/assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="files/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="files/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="files/assets/css/pages.css">
+	 <link rel="stylesheet" type="text/css" href="files/bower_components/multiselect/css/multi-select.css" />
+	  <link rel="stylesheet" type="text/css" href="files/bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/A83AAF25-4497-774E-8CB5-98A20E569F52/main.js" charset="UTF-8"></script></head>
+
+<body>
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+    <div class="loader-bar"></div>
+</div>
+<!-- [ Pre-loader ] end -->
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+        <!-- [ Header ] start -->
+        <nav class="navbar header-navbar pcoded-header">
+            <div class="navbar-wrapper">
+                <div class="navbar-logo">
+                    <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#">
+                        <i class="feather icon-toggle-right"></i>
+                    </a>
+                    <a href="index.html">
+                        <img class="img-fluid" src="files/assets/images/logo_invoice.png" alt="" />
+                    </a>
+                    <a class="mobile-options waves-effect waves-light">
+                        <i class="feather icon-more-horizontal"></i>
+                    </a>
+                </div>
+                <div class="navbar-container container-fluid">
+                    <ul class="nav-left">
+                        <li class="header-search">
+                            <div class="main-search morphsearch-search">
+                                <div class="input-group">
+                                        <span class="input-group-prepend search-close">
+										<i class="feather icon-x input-group-text"></i>
+									</span>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword">
+                                    <span class="input-group-append search-btn">
+										<i class="feather icon-search input-group-text"></i>
+									</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                <i class="full-screen feather icon-maximize"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="header-notification">
+                            <div class="dropdown-primary dropdown">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="feather icon-bell"></i>
+                                    <span class="badge bg-c-red">5</span>
+                                </div>
+                                <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="img-radius" src="files/assets/images/faq_man.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="img-radius" src="files/assets/images/faq_man.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="img-radius" src="files/assets/images/faq_man.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                      
+                        <li class="user-profile header-notification">
+                            <div class="dropdown-primary dropdown">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="files/assets/images/faq_man.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <span>Admin</span>
+                                    <i class="feather icon-chevron-down"></i>
+                                </div>
+                                <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                    <li>
+                                        <a href="#">
+                                            <i class="feather icon-settings"></i> Settings
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="feather icon-user"></i> Profile
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="feather icon-mail"></i> Logout
+
+                                        </a>
+                                    </li>
+                                  
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- [ Header ] end -->
+
+        <!-- [ chat user list ] start -->       
+        <!-- [ chat user list ] end -->
+
+        <!-- [ chat message ] start -->
+        
+        <!-- [ chat message ] end -->
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <!-- [ navigation menu ] start -->
+                <nav class="pcoded-navbar">
+                    <div class="pcoded-inner-navbar main-menu">                    
+                        <div class="pcoded-navigation-label"></div>
+                        <ul class="pcoded-item pcoded-left-item">
+						<li class=" ">
+                                    <a href="index.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather  icon-home"></i>
+									</span>
+                                    <span class="pcoded-mtext">Dashboard</span>
+                                </a>
+                                </li>
+								<li class=" ">
+                                    <a href="clients.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-users"></i>
+									</span>
+                                    <span class="pcoded-mtext">Clients</span>
+                                </a>
+                                </li>
+								<li class=" ">
+                                    <a href="product.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-package"></i>
+									</span>
+                                    <span class="pcoded-mtext">Products</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="invoice.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-file-minus"></i>
+									</span>
+                                    <span class="pcoded-mtext">Invoices</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="payment.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-credit-card"></i>
+									</span>
+                                    <span class="pcoded-mtext">Payments</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="reccur.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-layers"></i>
+									</span>
+                                    <span class="pcoded-mtext">Recurring</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="credit.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-credit-card"></i>
+									</span>
+                                    <span class="pcoded-mtext">Credits</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="quote.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-edit"></i>
+									</span>
+                                    <span class="pcoded-mtext">Quotes</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="proposal.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-command"></i>
+									</span>
+                                    <span class="pcoded-mtext">Proposals</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="project.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-briefcase"></i>
+									</span>
+                                    <span class="pcoded-mtext">Projects</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="task.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-check-circle"></i>
+									</span>
+                                    <span class="pcoded-mtext">Tasks</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="expense.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-pie-chart"></i>
+									</span>
+                                    <span class="pcoded-mtext">Expenses</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="vendor.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-server"></i>
+									</span>
+                                    <span class="pcoded-mtext">Vendors</span>
+                                </a>
+                                </li>
+								<li class="">
+                                    <a href="report.html" class="waves-effect waves-dark">
+									<span class="pcoded-micon">
+										<i class="feather icon-list"></i>
+									</span>
+                                    <span class="pcoded-mtext">Reports</span>
+                                </a>
+                                </li>
+						</ul>                     
+                        </div>
+                    </nav>
+					 <!-- [ navigation menu ] end -->
+
+                <!-- [ navigation menu ] end -->
+                <div class="pcoded-content">
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <div class="page-header-title">
+                                        <h4 class="m-b-10">Reports</h4>
+                                    </div>
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">
+                                                <i class="feather icon-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#">Reports</a>
+                                        </li>                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- Zero config.table start -->
+                                                
+                                                <!-- Zero config.table end -->
+                                           
+                                            <!-- Default Date-Picker card start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Report Settings</h5>
+                                                        <span>Make your selection to get reports.</span>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-xl-4 m-b-30">
+                                                                <h4 class="sub-title">Type</h4>
+                                                                                                                            
+                                                         
+                                                                <select name="select" class="form-control form-control-default">
+                                                                    <option value="opt1">Invoice</option>
+                                                                    <option value="opt2">Activity</option>
+                                                                    <option value="opt3">Aging</option>
+                                                                    <option value="opt4">Client</option>
+                                                                    <option value="opt5">Credit</option>
+                                                                    <option value="opt6">Document</option>
+                                                                    <option value="opt7">Expense</option>
+                                                                    <option value="opt8">Payment</option>
+																	<option value="opt4">Product</option>
+                                                                    <option value="opt5">Profit and Loss</option>
+                                                                    <option value="opt6">Task</option>
+                                                                    <option value="opt7">Tax Rate</option>
+                                                                    <option value="opt8">Quote</option>
+                                                                </select>
+                                                      
+                                                             
+                                                            </div>
+                                                            <div class="col-sm-12 col-xl-4 m-b-30">
+                                                                <h4 class="sub-title">Date Range</h4>
+                                                              
+                                                                <input class="form-control" type="date" />
+                                                            </div>
+                                                            <div class="col-sm-12 col-xl-4 m-b-30">
+                                                                <h4 class="sub-title">Status</h4>
+                                                                <select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+                                                                        <option value="AL">Alabama</option>
+                                                                        <option value="WY">Wyoming</option>
+                                                                        <option value="WY">Coming</option>
+                                                                        <option value="WY">Hanry Die</option>
+                                                                        <option value="WY">John Doe</option>
+                                                                    </select>
+                                                                   
+                                                          
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <!-- Default Date-Picker card end -->
+                                          
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                            </div>
+                            <!-- Main-body end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
+        to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="files/assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="files/assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="files/assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="files/assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="files/assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+<!-- Warning Section Ends -->
+<!-- Required Jquery -->
+<script type="text/javascript" src="files/bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="files/bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="files/bower_components/bootstrap/js/bootstrap.min.js"></script>
+<!-- waves js -->
+<script src="files/assets/pages/waves/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="files/bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="files/bower_components/modernizr/js/css-scrollbars.js"></script>
+<!-- data-table js -->
+<script src="files/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="files/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="files/assets/pages/data-table/js/jszip.min.js"></script>
+<script src="files/assets/pages/data-table/js/pdfmake.min.js"></script>
+<script src="files/assets/pages/data-table/js/vfs_fonts.js"></script>
+<script src="files/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="files/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="files/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="files/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="files/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<!-- Custom js -->
+<script src="files/assets/pages/data-table/js/data-table-custom.js"></script>
+<script src="files/assets/js/pcoded.min.js"></script>
+<script src="files/assets/js/dark-light/vertical-layout.min.js"></script>
+<script src="files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="files/assets/js/script.js"></script>
+
+
+<script type="text/javascript" src="files/bower_components/multiselect/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="files/bower_components/bootstrap-multiselect/js/bootstrap-multiselect.js">
+</script>
+
+</script>
+
+
+</script>
+
+</body>
+
+</html>
